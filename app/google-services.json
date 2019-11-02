@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009413474886",
+    "firebase_url": "https://stream-app-7af2a.firebaseio.com",
+    "project_id": "stream-app-7af2a",
+    "storage_bucket": "stream-app-7af2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009413474886:android:13e1d998a078f0327fd847",
+        "android_client_info": {
+          "package_name": "com.metacodersbd.watch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009413474886-i9nfarhhoj87vo67pp638ul65cksu4ht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.metacodersbd.watch",
+            "certificate_hash": "e7134e9e771c4552820851631487affe4d0ba29b"
+          }
+        },
+        {
+          "client_id": "1009413474886-l0bfpsrpali9ed8k2f3b3b1bvf3lgfou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOgkJOYLo4nW7OY5TsauxV653fcFZb5GI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009413474886-l0bfpsrpali9ed8k2f3b3b1bvf3lgfou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
