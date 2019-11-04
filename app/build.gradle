@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url 'https://plugins.gradle.org/m2/'}
+        maven { url 'https://plugins.gradle.org/m2/' }
     }
     dependencies {
         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.6'
@@ -23,7 +23,7 @@ android {
     defaultConfig {
         applicationId "com.metacodersbd.watch"
         manifestPlaceholders = [
-                onesignal_app_id: '54fb06eb-9197-4825-b705-957aec51e8c1',
+                onesignal_app_id               : '54fb06eb-9197-4825-b705-957aec51e8c1',
                 // Project number pulled from dashboard, local value is ignored.
                 onesignal_google_project_number: 'REMOTE'
         ]
@@ -56,12 +56,12 @@ dependencies {
     implementation 'com.onesignal:OneSignal:3.12.1'
 
 
-
     // navigation view
     implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
     implementation 'com.google.android.exoplayer:exoplayer:2.9.6'
     implementation 'com.google.android.exoplayer:exoplayer-core:2.9.6'
     implementation 'com.google.android.exoplayer:exoplayer-dash:2.9.6'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.9.6'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
 }
