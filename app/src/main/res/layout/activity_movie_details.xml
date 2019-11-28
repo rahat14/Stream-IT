@@ -8,55 +8,29 @@
     android:background="@color/colorBackgound"
     tools:context=".MovieDetailsActivity">
 
-    <RelativeLayout
+    <FrameLayout
         android:id="@+id/parent_relative"
         android:layout_width="match_parent"
-        android:layout_height="192dp">
+        android:layout_height="250dp">
 
-        <ImageView
-            android:id="@+id/featured_thumbnile"
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:resize_mode="fill"
+            app:show_buffering="always"
+            app:buffered_color="@color/colorPrimaryDark"
+            app:controller_layout_id="@layout/customsettings"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/avengers_movie" />
+            android:layout_height="match_parent"/>
 
-        <TextView
-            android:id="@+id/movie_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginBottom="15dp"
-            android:textColor="@color/colorWhite"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:background="@drawable/text_transparent_back"
-            android:text="Avengers End Game" />
 
-        <ImageView
-            android:id="@+id/play_img"
-            android:layout_width="111dp"
-            android:layout_height="55dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="73dp"
-            android:layout_marginTop="34dp"
-            android:layout_marginEnd="72dp"
-            android:layout_marginBottom="39dp"
-            app:srcCompat="@drawable/play_btn" />
 
-    </RelativeLayout>
+
+
+
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,6 +49,7 @@
             android:textColor="@color/colorWhite"/>
 
         <TextView
+            android:id="@+id/movieName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Avengers End Game"
@@ -99,6 +74,7 @@
         android:textColor="@color/colorWhite"/>
 
     <TextView
+        android:id="@+id/details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/movie_details"
